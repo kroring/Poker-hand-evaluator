@@ -1,7 +1,6 @@
 *** Areas for improvement ***
 
-1. In each card draw, instead of keeping track of what card numbers (0-51) have been drawn in an array and subsequently
-building the card object by mapping the 0-51 number within a certain range to add to players hand array...
+1. In each random card draw, instead of keeping track of what card numbers (0-51) have been drawn in an array and subsequently building the card object by mapping the 0-51 number within a certain range to add to players hand array...
 Instead have an array of card objects to pull from, each of which gets directly added to the players hand at deal time. On
 each draw, if the number isn't within the deck of available cards, go again. With this change, can then most likely
 pull out the card_rank look up - getting this information from the card object itself when necessary
